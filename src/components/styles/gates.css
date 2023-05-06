@@ -1,0 +1,130 @@
+.bloch-sphere {
+  position: absolute;
+  right: 0px;
+  top: 250px;
+  width: 250px;
+  height: 250px;
+  margin-right: 100px;
+  animation: rot 10s infinite normal;
+}
+
+@keyframes rot {
+  0% {
+    transform: scale(1) rotate(-0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.toolBox {
+  display: flex;
+  justify-content: center;
+  background-color: lightslategray;
+  min-height: 100px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.toolBox .btn {
+  font-size: 1.8em;
+  width: 70px;
+  height: 60px;
+  font-weight: bold;
+  margin: 1.5%;
+}
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #e3cd83;
+  text-decoration: none;
+}
+/* .btn-grad1 {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+         
+.btn-grad2 {
+    background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7  51%, #1CD8D2  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ 
+         
+.btn-grad3 {
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+ 
+         
+.btn-grad4 {
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+           
+  .btn-grad5 {
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  } */
