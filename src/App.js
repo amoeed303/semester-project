@@ -9,6 +9,13 @@ import { useState } from "react";
 function App() {
   const [firstLineGates, setFirstLineGates] = useState([]) // stack of gates
   const [secondLineGates, setSecondLineGates] = useState([]) // stack of gates
+  const [dataArray, setDataArray] = useState([]);
+
+  const clickhandler = (newData) => {
+    setDataArray([...dataArray, newData]);
+  };
+  console.log(dataArray);
+  console.log(firstLineGates);
   return (
     <>
       <Nav />
@@ -18,9 +25,10 @@ function App() {
         setFirstLineGates={setFirstLineGates}
         setSecondLineGates={setSecondLineGates} 
       />
-      <GateLine gates={firstLineGates} setGates={setFirstLineGates} />
-      <GateLine gates={secondLineGates}  setGates={setSecondLineGates}/>
-      <Menu />
+      
+      <GateLine dataarray={dataArray} setDataArray={setDataArray} gates={firstLineGates} setGates={setFirstLineGates} />
+      <GateLine dataarray={dataArray} setDataArray={setDataArray}  setGates={setSecondLineGates}/>
+      <Menu gates={firstLineGates} gate2={secondLineGates} dataarray={dataArray}/>
       <MyForm />
       <div>testign div</div>
     </>

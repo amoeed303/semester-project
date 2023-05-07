@@ -40,10 +40,10 @@ const Gates = ({
     setSecondLineGates([...secondLineGates, "z"]);
   }
   function MBtnHandler1() {
-    setFirstLineGates([...firstLineGates, "m"]);
+    setFirstLineGates([...firstLineGates, "-"]);
   }
   function MBtnHandler2() {
-    setSecondLineGates([...secondLineGates, "m"]);
+    setSecondLineGates([...secondLineGates, "-"]);
   }
 
   return (
@@ -53,7 +53,7 @@ const Gates = ({
           +
         </button>
         <button data-tooltip-id="cnot-btn-handler" className="btn">
-          .
+          cnot
         </button>
         <button data-tooltip-id="h-btn-handler" className="btn">
           H
@@ -65,7 +65,7 @@ const Gates = ({
           Z
         </button>
         <button data-tooltip-id="m-btn-handler" className="btn">
-          M
+          -
         </button>
       </div>
       <Tooltip

@@ -6,3 +6,34 @@
     margin-left: 6rem;
     border-radius: 1rem;
 }
+.menu-box{
+    border-radius: 5px;
+    border:2px solid black;
+    height: 250px;
+    width: 100%;
+    height: 100%;
+}
+#matrix1{
+
+}
+tr {
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+  }
+  td, th {
+    padding: 8px;
+  }
+  table {
+    border-collapse: collapse;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  td:first-child {
+    border-left: 1px solid black;
+  }
+  
+  td:last-child {
+    border-right: 1px solid black;
+  }
+  

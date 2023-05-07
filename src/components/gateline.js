@@ -3,29 +3,41 @@ import { useState } from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
-const GateLine = ({ gates, setGates }) => {
+const GateLine = ({ gates, setGates,dataarray ,setDataArray}) => {
   const [bit, setBit] = useState(0);
   let clickHandler = () => {
     if (bit === 0) {
       setBit(1);
+      setDataArray([...dataarray, '1']);
     } else {
       setBit(0);
+      setDataArray([...dataarray, '0']);
+      
     }
   };
+  
 
   return (
+    <>
     <div className="gateline">
       <h1 className="h1" onClick={clickHandler}>
         {`|`}
         {bit}
         {`>`}
       </h1>
-      <div className="line-box">
+      <div className="line-box"><span className="line">------</span>
         {gates?.map((gate, idx) => (
+          <>
           <Gate setGates={setGates} index={idx} gate={gate} gates={gates} />
+          <span className="line">------</span>
+          </>
         ))}
+        
       </div>
     </div>
+    
+    </>
+
   );
 };
 
@@ -66,6 +78,7 @@ const Gate = ({ gates, gate, index, setGates }) => {
         <span className="span-gate">{gate}</span>
       </div>
       {gate === "." ? (
+        <>
         <Tooltip id={`${index}`} effect="solid" place="bottom" clickable={true}>
           <div>
             <button className="line-btn" onClick={leftHandler}>
@@ -79,6 +92,7 @@ const Gate = ({ gates, gate, index, setGates }) => {
             <button className="line-btn">Place target</button>
           </div>
         </Tooltip>
+        </>
       ) : (
         <Tooltip id={`${index}`} effect="solid" place="bottom" clickable={true}>
           <div>
@@ -93,6 +107,7 @@ const Gate = ({ gates, gate, index, setGates }) => {
           </div>
         </Tooltip>
       )}
+      
     </>
   );
 };
