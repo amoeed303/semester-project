@@ -21,8 +21,10 @@ function App() {
       <GateLine gates={firstLineGates} setGates={setFirstLineGates} />
       <GateLine gates={secondLineGates}  setGates={setSecondLineGates}/>
       <Menu />
-      <MyForm />/
+      <MyForm />
+      <div>testign div</div>
     </>
+    
   );
 }
 
