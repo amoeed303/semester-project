@@ -27,7 +27,7 @@ function App() {
       />
       
       <GateLine dataarray={dataArray} setDataArray={setDataArray} gates={firstLineGates} setGates={setFirstLineGates} />
-      <GateLine dataarray={dataArray} setDataArray={setDataArray}  setGates={setSecondLineGates}/>
+      <GateLine dataarray={dataArray} setDataArray={setDataArray} gates={secondLineGates} setGates={setSecondLineGates}/>
       <Menu gates={firstLineGates} gate2={secondLineGates} dataarray={dataArray}/>
       <MyForm />
       <div>testign div</div>
