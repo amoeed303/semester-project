@@ -15,6 +15,12 @@ const Gates = ({
   function cnotBtnHandler2() {
     setSecondLineGates([...secondLineGates, "."]);
   }
+  function xBtnHandler1() {
+    setFirstLineGates([...firstLineGates, "x"]);
+  }
+  function xBtnHandler2() {
+    setSecondLineGates([...secondLineGates, "x"]);
+  }
   function plusBtnHandler1() {
     setFirstLineGates([...firstLineGates, "+"]);
   }
@@ -58,6 +64,9 @@ const Gates = ({
         <button data-tooltip-id="h-btn-handler" className="btn">
           H
         </button>
+        <button data-tooltip-id="x-btn-handler" className="btn">
+          X
+        </button>
         <button data-tooltip-id="y-btn-handler" className="btn">
           Y
         </button>
@@ -98,6 +107,23 @@ const Gates = ({
         </div>
         <div>
           <button className="line-btn" onClick={HBtnHandler2}>
+            2nd GateLine
+          </button>
+        </div>
+      </Tooltip>
+      <Tooltip
+        id="x-btn-handler"
+        effect="solid"
+        place="bottom"
+        clickable={true}
+      >
+        <div>
+          <button className="line-btn" onClick={xBtnHandler1}>
+            1st GateLine
+          </button>
+        </div>
+        <div>
+          <button className="line-btn" onClick={xBtnHandler2}>
             2nd GateLine
           </button>
         </div>

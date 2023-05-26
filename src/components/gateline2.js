@@ -3,15 +3,15 @@ import { useState } from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
-const GateLine = ({ gates, setGates,dataarray ,setDataArray}) => {
+const GateLine2 = ({ gates, setGates,dataarray ,setDataArray}) => {
   const [bit, setBit] = useState(0);
   let clickHandler = () => {
     if (bit === 0) {
       setBit(1);
-      setDataArray({ q1: "1"});
+      setDataArray({ q2: "1"});
     } else {
       setBit(0);
-      setDataArray({ q1: "0"});
+      setDataArray({ q2: "0"});
       
     }
   };
@@ -112,4 +112,4 @@ const Gate = ({ gates, gate, index, setGates }) => {
   );
 };
 
-export default GateLine;
+export default GateLine2;
