@@ -28,10 +28,10 @@ const Gates = ({
     setSecondLineGates([...secondLineGates, "+"]);
   }
   function HBtnHandler1() {
-    setFirstLineGates([...firstLineGates, "h"]);
+    setFirstLineGates([...firstLineGates, "H"]);
   }
   function HBtnHandler2() {
-    setSecondLineGates([...secondLineGates, "h"]);
+    setSecondLineGates([...secondLineGates, "H"]);
   }
   function YBtnHandler1() {
     setFirstLineGates([...firstLineGates, "y"]);

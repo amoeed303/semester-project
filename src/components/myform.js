@@ -29,19 +29,19 @@ function MyForm() {
           href="https://quantumcomputinguk.org/tutorials/introduction-to-bell-states"
           target="_blank"
         >
-          Into to bell states
+          <u> Into to bell states</u>
         </a>
       </h4>
       <h4>
         Explore Quantum Circuits in Simulated Enviorment in :{" "}
         <a href="https://qiskit.org/" target="_blank">
-          Qiskit
+          <u> Qiskit</u>
         </a>
       </h4>
       <h4>
         Vislulaize Quantum Circuits and bloch Sphere in :{" "}
         <a href="https://algassert.com/quirk" target="_blank">
-          quirk Simulator
+          <u>quirk Simulator</u>
         </a>
       </h4>
     </>

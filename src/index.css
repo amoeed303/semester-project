@@ -106,15 +106,17 @@ code {
   color: #fff;
 }
 footer {
-  background-color: #f5f5f5;
+background-color: rgba(14, 22, 61) ;
   padding: 20px;
   text-align: center;
+
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -123,13 +125,9 @@ footer {
 
 .footer-info p {
   margin: 0;
-  color: #666;
+  color: #cfd204;
   font-size: 14px;
 }
 
 
-.footer-info p {
-  margin: 0;
-  color: #666;
-  font-size: 14px;
-}
+

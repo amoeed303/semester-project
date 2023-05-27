@@ -68,7 +68,8 @@ function App() {
                   &copy; 2023 Qubitrix. All rights reserved by FCAI Air
                   University,Islamabad.
                 </p>
-                <p>Developers Saim,Moeed&Farhat </p>
+                <p>Supervised by: Mr Tariq Naeem </p>
+                <p>Developed by: Saim , Moeed , Farhat </p>
               </div>
             </div>
           </footer>
