@@ -11,6 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.splash-screen {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+  color: white;
+  background-color:rgba(14, 22, 61) ;
+}
+.spbutton{
+  width: auto;
+  height: 50px;
+  font: 1.5em sans-serif;
+  background-color: #ffffff;
+ margin:0 auto;
+    display:block;
+ 
+}
 
 
 .container {
@@ -87,4 +104,32 @@ code {
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
+}
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+.footer-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+
+.footer-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
 }

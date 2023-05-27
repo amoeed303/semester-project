@@ -85,12 +85,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={plusBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={plusBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -102,12 +102,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={HBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={HBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -119,12 +119,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={xBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={xBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -136,12 +136,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={YBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={YBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -153,12 +153,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={ZBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={ZBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -170,12 +170,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={MBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={MBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
@@ -188,12 +188,12 @@ const Gates = ({
       >
         <div>
           <button className="line-btn" onClick={cnotBtnHandler1}>
-            1st GateLine
+            1st Qubit
           </button>
         </div>
         <div>
           <button className="line-btn" onClick={cnotBtnHandler2}>
-            2nd GateLine
+            2nd Qubit
           </button>
         </div>
       </Tooltip>
