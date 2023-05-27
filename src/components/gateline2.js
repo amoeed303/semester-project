@@ -21,7 +21,7 @@ const GateLine2 = ({ gates, setGates,dataarray ,setDataArray}) => {
     <>
     <div className="gateline">
       <h1 className="h1" onClick={clickHandler}>
-        {`|`}
+        q1{`|`}
         {bit}
         {`>`}
       </h1>
