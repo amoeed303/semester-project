@@ -84,7 +84,7 @@ const Menu = ({ dataarray, dataarray2, gates, gate2, setResult }) => {
 
   let resultMatrix = q1;
   let resultMatrix2 = q2;
-  // localStorage.setItem('resultMatrix', JSON.stringify(resultMatrix));
+  // 
   // localStorage.setItem('resultMatrix2', JSON.stringify(resultMatrix2));
 
   let input = q1;
@@ -114,7 +114,7 @@ const Menu = ({ dataarray, dataarray2, gates, gate2, setResult }) => {
       gateMatrix = zgate;
     } else if (gate === ".") {
       gateMatrix = cnotgate;
-      input = JSON.parse(localStorage.getItem("resultMatrix2"));
+      input = JSON.parse(localStorage.getItem("resultMatrix2"))==null?resultMatrix2:JSON.parse(localStorage.getItem("resultMatrix2"));
     } else {
       gateMatrix = q1;
     }
@@ -136,7 +136,7 @@ const Menu = ({ dataarray, dataarray2, gates, gate2, setResult }) => {
       console.log("in first time");
     } else if (gateMatrix == cnotgate) {
       console.log("in else");
-
+      console.log(input);
       input = kroneckerProduct(input, resultMatrix);
       // Perform matrix multiplication
       console.log(resultMatrix2);
@@ -194,7 +194,7 @@ const Menu = ({ dataarray, dataarray2, gates, gate2, setResult }) => {
       gateMatrix = zgate;
     } else if (gate === ".") {
       gateMatrix = cnotgate;
-      input1 = JSON.parse(localStorage.getItem("resultMatrix"));
+      input1 = JSON.parse(localStorage.getItem("resultMatrix"))==null?resultMatrix:JSON.parse(localStorage.getItem("resultMatrix"));
     } else {
       gateMatrix = q1;
     }

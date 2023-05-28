@@ -6,9 +6,25 @@ import MyForm from "./components/myform";
 import { useState } from "react";
 import GateLine2 from "./components/gateline2";
 import ModalScreen from "./components/modal";
+import { useEffect } from "react";
 //importing  components for menu bar routing
 
 function App() {
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.setItem('resultMatrix', null);
+      localStorage.setItem('resultMatrix2', null);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
+
+  const [status,setStatus]=useState(false);
   const [firstLineGates, setFirstLineGates] = useState([]); // stack of gates
   const [secondLineGates, setSecondLineGates] = useState([]); // stack of gates
   const [dataArray, setDataArray] = useState({ q1: "" });
@@ -23,9 +39,19 @@ function App() {
   const clickhandler = (newData) => {
     setDataArray([...dataArray, newData]);
   };
-  console.log(dataArray);
-  console.log(firstLineGates);
-  console.log(result);
+
+  if(status==true){
+      setFirstLineGates([]);
+      setSecondLineGates([]);
+      setDataArray({ q1: '' });
+      setDataArray2({ q2: '' });
+      setResult([]);
+      localStorage.setItem('resultMatrix', null);
+      localStorage.setItem('resultMatrix2', null);
+      setStatus(false);
+    
+  }
+  
   return (
     <>
       {showInstructions ? (
@@ -39,6 +65,7 @@ function App() {
             firstLineGates={firstLineGates}
             setFirstLineGates={setFirstLineGates}
             setSecondLineGates={setSecondLineGates}
+            setStatus={setStatus}
           />
 
           <GateLine

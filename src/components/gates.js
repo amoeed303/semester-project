@@ -8,6 +8,7 @@ const Gates = ({
   setFirstLineGates,
   secondLineGates,
   setSecondLineGates,
+  setStatus
 }) => {
   function cnotBtnHandler1() {
     setFirstLineGates([...firstLineGates, "."]);
@@ -51,6 +52,9 @@ const Gates = ({
   function MBtnHandler2() {
     setSecondLineGates([...secondLineGates, "-"]);
   }
+  const refreshHandler=() => {
+    setStatus(true);
+  };
 
   return (
     <>
@@ -76,7 +80,11 @@ const Gates = ({
         <button data-tooltip-id="m-btn-handler" className="btn">
           -
         </button>
+        <div className="refresh">
+          <button onClick={refreshHandler} className="refreshb">REFRESH</button>
+        </div>
       </div>
+      
       <Tooltip
         id="plus-btn-handler"
         effect="solid"

@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 const ModalScreen = ({ onStart }) => {
   return (
     <div className="splash-screen">
-      <h1>Welcome to Qubitrix</h1>
-      <h1>disclaimer:</h1>
+      <h2>Welcome to Qubitrix</h2>
+      <h2>disclaimer:</h2>
       <ol>
         <li>
           1. This website is in beta mode and may have limitations and potential
